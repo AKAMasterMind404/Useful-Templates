@@ -6,7 +6,7 @@ const SUCCESS_CODE = 200;
 // BAD REQUEST: 401
 // NOT FOUND: 404
 // INTERNAL SEVER ERROR: 500
-const endpoint = "https://enthem.herokuapp.com/";
+const endpoint = "<your-endpoint-name>";
 
 /// FOR REAL DEVICE
 // const endpoint = "http://10.0.2.2:9000/";
