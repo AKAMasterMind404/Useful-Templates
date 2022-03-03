@@ -5,7 +5,7 @@ Co-author: <a href="https://github.com/PratikJH153">PratikJH153</a>
 
 1. REST API Dart Code: A ready to use repository containing code for calling GET, POST, DELETE and PATCH methods using the Dio package.
 
-Working: 
+Working:<br>
 a. database.dart: The file is where you specify the endpoint of your application. It contains variables for toggling between Debug mode and production as well as custom messages     made for various errors.
      
     unpackLocally: A function that takes in response body of a REST API call and returns a map containing two parameters: 
