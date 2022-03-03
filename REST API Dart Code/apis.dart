@@ -1,37 +1,36 @@
 import 'database.dart';
 import 'rest_apis.dart';
 
-class UserAPIS {
+class TemplateAPIS {
   static Future<Map> getCall() async {
     if (kDebugMode) {
-      print("CALLING getUsers()");
+      print("CALLING getCall()");
     }
-    String endpoint = "users/getAllUsers/";
+    String endpoint = "sample/endpoint";
     return GET(endpoint);
   }
 
-  static Future<Map> getSingleUserData(String id) async {
-    // GETS USER DATA AND FILLS UserProvider
+  static Future<Map> postCall(Map? body) async {
     if (kDebugMode) {
-      print("CALLING getSingleUserData(String id)");
+      print("CALLING postCall()");
     }
-    String endpoint = "users/getUserInfoAdmin/$id";
-    return GET(endpoint);
-  }
-
-  static Future<Map> getRecommendations(String id) async {
-    if (kDebugMode) {
-      print("CALLING getRecommendations(String id)");
-    }
-    String endpoint = "users/getRecommendations/$id";
-    return GET(endpoint);
-  }
-
-  static Future<Map> addUser(Map body) async {
-    if (kDebugMode) {
-      print("CALLING addUser(Map body)");
-    }
-    String endpoint = "users/addUser/";
+    String endpoint = "sample/endpoint";
     return POST(endpoint, body);
+  }
+
+  static Future<Map> patchCall(Map? body) async {
+    if (kDebugMode) {
+      print("CALLING patchCall()");
+    }
+    String endpoint = "sample/endpoint";
+    return PATCH(endpoint, body);
+  }
+
+  static Future<Map> deleteCall() async {
+    if (kDebugMode) {
+      print("CALLING deleteCall()");
+    }
+    String endpoint = "sample/endpoint";
+    return DELETE(endpoint);
   }
 }
