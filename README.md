@@ -8,7 +8,10 @@ Co-author: <a href="https://github.com/PratikJH153">PratikJH153</a>
 Working: 
 a. database.dart: The file is where you specify the endpoint of your application. It contains variables for toggling between Debug mode and production as well as custom messages     made for various errors.
      
-    unpackLocally: A function that takes in response body of a REST API call and returns a map containing two parameters: "success": 0/1 (0 for failure 1 for successful result)     and "unpacked": <response data>. In case of call failure "unpacked" will return a message corresponding to the type of error and the response data otherwise ie. in case of a     successful request.
+    unpackLocally: A function that takes in response body of a REST API call and returns a map containing two parameters: 
+    "success": 0/1 (0 for failure 1 for successful result) and 
+    "unpacked": <response data>. 
+    In case of call failure "unpacked" will return a message corresponding to the type of error and the response data otherwise ie. in case of a successful request.
   
   b. rest_apis.dart: The file containing the REQUEST function responsible for handling an asynchronous API call.
   
